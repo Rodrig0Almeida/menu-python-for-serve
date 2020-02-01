@@ -6,6 +6,7 @@ tmuxd='tmux detach'#tira o processo da sua sessão
 tmuxa='tmux attach'#coloca ele de novo na sua sessão
 menud="python3 main.py"
 while (x==1):
+  print('')
   print("Tmux    ")
   print("Menu para usar no terminal *não usar no tmux")
   print("para abri o terminal no tmux aperte Ctrl B %")

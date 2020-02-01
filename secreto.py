@@ -5,6 +5,7 @@ tshell="python3 tshell.py"
 menud="python3 main.py"
 install='sudo apt-get install aria2 & sudo apt-get install tmux & sudo apt-get install unrar'
 while (x==1):
+  print('')
   print ("Menu Secreto    ")
   print("=========================")
   print("")
