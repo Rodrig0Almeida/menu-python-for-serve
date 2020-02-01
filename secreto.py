@@ -21,9 +21,12 @@ while (x==1):
   print("2.Voltar para menu inicial")
   print("")
   print("=========================")
-  opcao=(int(input("Escolha Opção:")))
+  opcao=(input("Escolha Opção:"))
   os.system(clear)
-  if opcao == 1:
+  if opcao == '1':
     os.system(tshell)
-  if opcao == 2:
+  if opcao == '2':
     os.system(menud)
+  else:
+    print(opcao)
+    os.system(opcao)

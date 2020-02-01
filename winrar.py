@@ -12,13 +12,13 @@ while (x==1):
   print('3.Voltar para menu inicial')
   print("")
   print("=========================")
-  opcao=(int(input("Escolha Opção:")))
+  opcao=(input("Escolha Opção:"))
   os.system(clear)
-  if opcao ==1:
+  if opcao =='1':
     print('ZIP')
-  if opcao ==2:
+  if opcao =='2':
     print('RAR')
-  if opcao ==1 or opcao ==2:
+  if opcao =='1' or opcao =='2':
     print('Coloque o local por completo *ex: /home/usuario/pasta')
     print("=========================")
     local=(input("Coloque local do arquivo: "))
@@ -27,13 +27,16 @@ while (x==1):
     print("=========================")
     rar='unrar x "'+local+'/'+arquivo+'" -d '+'"'+destino+'"'
     zipe='unzip "'+local+'/'+arquivo+'" -d '+'"'+destino+'"'
-    if opcao == 1:
+    if opcao == '1':
      print('unzip "'+local+'/'+arquivo+'" -d '+'"'+destino+'"')
      os.system(zipe)
      
-    if opcao == 2:
+    if opcao == '2':
      print('unrar x "'+local+'/'+arquivo+'" -d '+'"'+destino+'"')
      os.system(rar)
-  if opcao == 3:
+  if opcao == '3':
     os.system(menud)
     x=2
+  else:
+    print(opcao)
+    os.system(opcao)

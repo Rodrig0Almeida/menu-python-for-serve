@@ -18,14 +18,17 @@ while (x==1):
   print('4.Voltar para menu inicial')
   print('')
   print("=========================")
-  opcao=(int(input("Escolha Opção:")))
+  opcao=(input("Escolha Opção:"))
   os.system(clear)
-  if opcao == 1:
+  if opcao == '1':
     os.system(tmux)
-  if opcao == 2:
+  if opcao == '2':
     os.system(tmuxd)
-  if opcao == 3:
+  if opcao == '3':
     os.system(tmuxa)
-  if opcao == 4:
+  if opcao == '4':
     os.system(menud)
     x=2
+  else:
+    print(opcao)
+    os.system(opcao)
