@@ -11,7 +11,7 @@ tmux='python3 tmux.py'#abri tmux
 secreto='python3 secreto.py'
 while (x==1):
   print('')
-  print("Menu de Funções v11     ")
+  print("Menu de Funções v12     ")
   print("=========================")
   print("")
   print("1.Descompactar arquivos")

@@ -3,7 +3,7 @@ import socket
 x=1
 clear='clear'#limpar terminal
 menud='python3 main.py'
-while (x==1)
+while (x==1):
   os.system(clear)
   print("")
   print("Ip: "+socket.gethostbyname(socket.gethostname()))
@@ -11,7 +11,8 @@ while (x==1)
   print("")
   print("1.Ipconfig")
   print("2.Verificar Portas")
-  print('3.Voltar para menu inicial')
+  print("3.Ip Externo")
+  print('4.Voltar para menu inicial')
   print("")
   print("=========================")
   opcao=(int(input("Escolha Opção:")))
@@ -26,17 +27,9 @@ while (x==1)
     print(nporta)
     os.system(nporta)
   if opcao == 3:
+    ipex='links ipinfo.io/ip'
+    os.system(ipex)
+  if opcao == 4:
     menud='python3 main.py'
     os.system(menud)
     x=2
-  if opcao == 69:
-    import urllib.request
-    pagina = urllib.request.urlopen("http://www.meuip.com.br/index.php")
-    texto = pagina.read().decode("utf8")
-    busca = texto.find('div_ip").innerHTML = "')
-    inicio = busca + 22
-    final = texto[inicio:]
-    final = final.find('"')
-    final = inicio + final
-    ip = texto[inicio:final]
-    print (ip)
