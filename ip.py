@@ -4,7 +4,6 @@ x=1
 clear='clear'#limpar terminal
 menud='python3 main.py'
 while (x==1):
-  os.system(clear)
   print("")
   print("Ip: "+socket.gethostbyname(socket.gethostname()))
   print("=========================")
