@@ -1,11 +1,10 @@
 import os 
-import socket
 x=1
 clear='clear'#limpar terminal
 menud='python3 main.py'
 while (x==1):
   print("")
-  print("Ip: "+socket.gethostbyname(socket.gethostname()))
+  print("Ip")
   print("=========================")
   print("")
   print("1.Ipconfig")

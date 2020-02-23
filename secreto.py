@@ -27,6 +27,3 @@ while (x==1):
     os.system(tshell)
   if opcao == '2':
     os.system(menud)
-  else:
-    print(opcao)
-    os.system(opcao)

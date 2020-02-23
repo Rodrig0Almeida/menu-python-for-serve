@@ -1,5 +1,5 @@
 import os
-import socket
+import shutil
 x=1
 clear='clear'#limpar terminal
 menud='python3 main.py'
@@ -20,7 +20,11 @@ while (x==1):
   if opcao =='2':
     print('Download em segundo plano')
   if opcao =='1' or opcao =='2':
-    print('Donwload')
+    total, used, free = shutil.disk_usage("/")
+    print("=========================")
+    print('Memoria: interna')
+    print("Total: %d GB" % (total // (2**30)))
+    print("Free: %d GB" % (free // (2**30)))
     print("=========================")
     local=input("Coloque local de Download do arquivo: ")
     link=input("Coloque link: ")
