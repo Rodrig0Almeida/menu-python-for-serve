@@ -45,7 +45,7 @@ while (x == 1):
     x = 2
   if opcao == '7':
     os.system(reboot)
-  if opcao == '69':
+  if opcao == '14':
     os.system(secreto)
     x = 2
   else :
